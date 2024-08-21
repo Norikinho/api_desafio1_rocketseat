@@ -16,11 +16,15 @@ public class CourseEntity {
     
     @Length(min=6,max =30)
     private String name;
-    
+
     @Length(min=6,max =30)
-    private String type;
+    private String active;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
     
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
+    
 }
+

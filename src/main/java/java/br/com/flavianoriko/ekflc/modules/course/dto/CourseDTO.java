@@ -12,9 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CourseDTO {
-    private String description;
+    private String active;
     private String name;
-    private String type;
+    private String category;
     private UUID id;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     
 }
